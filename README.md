@@ -1,27 +1,24 @@
-# Chalet de Louron — v15 coordonnées + carousel activités LocPilot
+# Chalet de Louron — v20 informations corrigées
 
-Cette version conserve le design validé par les clients et l’arborescence technique standard du site Alice / LocPilot.
+Version issue de la v19, avec les informations capacité / parking / sanitaires corrigées sur les trois langues.
 
-## Mises à jour v14
+Corrections v20 :
+- capacité affichée : 9 à 10 personnes ;
+- données structurées mises à jour avec `maximumAttendeeCapacity: 10` ;
+- parking corrigé : 4 places de parking ;
+- sanitaires corrigés : 2 salles d’eau + 2 WC séparés ;
+- traductions FR / EN / ES mises à jour ;
+- métadonnées SEO / Open Graph / llms.txt mises à jour ;
+- visite virtuelle 360 plein écran conservée ;
+- arborescence LocPilot / Alice conservée.
 
-- Téléphone de contact remplacé par : +33 7 84 29 82 02.
-- Email de contact remplacé par : contact@locpilotbyr4.fr.
-- Pages légales FR / EN / ES complétées avec les coordonnées LocPilot / R4 Consulting.
-- Google Maps et météo restent actifs sur Loudenvielle avec chargement optimisé.
-- La galerie 360 et la galerie photo restent réorganisées conformément à la v13.
+## v21 — Miniatures visite virtuelle 360°
 
-## À finaliser lors de la réception des photos
+Les miniatures de la galerie 360° ont été régénérées depuis les panoramas équirectangulaires sous forme de vues rectilinéaires 16:9. Elles ne sont plus de simples panoramas écrasés dans une vignette.
 
-- Remplacer les photos provisoires par les photos HD définitives.
-- Remplacer les panoramas 360 provisoires par les vrais fichiers équirectangulaires.
-- Intégrer le script Elloha définitif du chalet.
-- Ajouter l’adresse précise et/ou les coordonnées GPS exactes si les propriétaires souhaitent les afficher publiquement.
-- Ajuster le numéro d’enregistrement mairie si nécessaire.
+Principe retenu : ne pas initialiser un viewer Photo Sphere Viewer/WebGL dans chaque miniature afin de préserver les Core Web Vitals. Les vignettes servent d’aperçu léger ; au clic, la scène complète s’ouvre dans le viewer 360°.
 
 
-## Mise à jour v15
-- Adresse exacte du chalet intégrée : 13 Chemin de la Bayle, 65510 Loudenvielle.
-- Numéro affiché au format international : +33 7 84 29 82 02.
-- Crédit footer LocPilot rendu cliquable vers https://locpilotbyr4.fr/.
-- Carrousel ajouté sur la section « À vivre autour du chalet ».
-- Ancres principales vérifiées : #chalet, #experiences, #tarifs, #a-propos, #infos-pratiques, #reservation.
+## V25 - Correction cache miniatures
+
+Les miniatures des sections activités et visite 360 ont été renommées avec le suffixe `-v25.webp` afin de forcer le navigateur à charger les nouvelles images et éviter l’affichage d’anciennes vignettes mises en cache.
