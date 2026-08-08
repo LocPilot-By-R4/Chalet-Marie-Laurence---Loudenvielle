@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://chalet-louron.fr/sitemap.xml
+Sitemap: https://chez-marie-laurence-loudenvielle.fr/sitemap.xml
