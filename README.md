@@ -50,4 +50,6 @@ V41 : amélioration UX de la fiche Saveurs locales, suppression réelle du bouto
 
 - V50 : recentrage de l’image dans le pop-up “Aventures sportives” et repositionnement de la fiche Intersport sous Mini Golf.
 
-- V51 : suppression des dernières occurrences visibles de l’ancien terme dans la section confort, remplacé par maison/house/casa.
+- V53 : retours propriétaires intégrés : accroche corrigée, suppression des distances en voiture en tête des pop-ups, suppression Google Maps pour soirées cheminée et bien-être, ménage obligatoire à 120 €, bandeau bas mis à jour, photo cheminée et miniature actualisées.
+
+- V57 : correction du hero pour restaurer le rendu validé propriétaires : statistiques en ligne, sans fond encadré, remontées au-dessus de la courbe blanche et texte non tronqué.
